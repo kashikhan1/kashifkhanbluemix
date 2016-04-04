@@ -3,7 +3,7 @@
   Personalized Recommendations is a tool that helps you find the best vacation spots to go to.  This app uses two Watson:
   * [Concept Insights](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/concept-insights.html) searches for your relevant places.
   
-
+Demo http://kashifkhanbluemix-kashifkhan-1422.mybluemix.net/
 
 Give it a try! Click the button below to fork into IBM DevOps Services and deploy your own copy of this application on Bluemix.
 
