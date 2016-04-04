@@ -2,19 +2,18 @@
 
   Personalized Recommendations is a tool that helps you find the best vacation spots to go to.  This app uses two Watson:
   * [Concept Insights](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/concept-insights.html) searches for your relevant places.
-  * [Tradeoff Analytics](http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/tradeoff-analytics.html) helps decide which place is best.
+  
 
-Demo: http://personalized-recommendations.mybluemix.net/
 
 Give it a try! Click the button below to fork into IBM DevOps Services and deploy your own copy of this application on Bluemix.
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/watson-developer-cloud/personalized-recommendations)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/kashikhan1/kashifkhanbluemix)
 
 ## Running locally
   The application uses [Node.js](http://nodejs.org/) and [npm](https://www.npmjs.com/) so you will have to download and install them as part of the steps below.
 
 1. Open a terminal and run:  
-    `git clone git@github.com:watson-developer-cloud/personalized-recommendations.git`
+    `git clone https://github.com/kashikhan1/kashifkhanbluemix'
 2. Change the directory to personalized-recommendations
     `cd personalized-recommendations`
 3. Copy the credentials from your services in Bluemix to `app.js`, you can see the credentials by going to your app in Bluemix and cliking on "See credentials".
