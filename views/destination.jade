@@ -1,0 +1,11 @@
+//- index.jade
+extends ./layout.jade
+
+block row-content
+  div.row
+    div.col-lg-6.col-xs-6.col-md-6
+      h2 Your destination is #{name}
+
+      p Density: #{values.density} people/km2
+      p Cost: $#{values.cost} dollars
+      p Distance: #{values.distance} miles

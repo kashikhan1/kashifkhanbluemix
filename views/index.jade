@@ -1,0 +1,45 @@
+//- index.jade
+extends ./layout.jade
+
+block row-content
+  div.row
+    div.col-lg-12.col-xs-12
+      h2 Search Box
+      div.tags-container
+      div#remote.input-container
+        input.typeahead.form-control.query(type='text',autofocus, placeholder=' Try "book name" or "author Name"', required='true', value='', autocomplete='off', data-provide='typeahead')
+    div.col-lg-12.col-xs-12
+      h2 Results
+      div.row
+        div.col-lg-12.col-xs-12.text-center
+          div.errorMsg(style='display:none')
+            p Internal Server Issue.  Try refreshing and see if it's working again.
+        div.row.loading(style='display:none')
+          div.col-lg-12.col-xs-12.text-center
+            img(src='images/watson.gif')
+        div.noresult.text-center(style='display:none;')
+          h4 No results found
+        div.result(style='display:none;')
+          div.col-lg-12.col-xs-12.col-md-12.well.text-center
+            p.result-description What you're seeing here are the most relevant 05 books.  Concept Insights automagically tags each of these cities with their Wikipedia Knowledge Graph it has developed.  Once they’re tagged, you can search against them with your search query.  The result is a list of cities that are most relevant to your search query.  Each city has a list of related and relevant activities determined by Concept Insights' knowledge graph tagging.
+            .locations.clearfix
+      div.result
+        div.ta-container(style='display:none;margin-bottom:30px;')
+          div.row
+            div.text-center.ta-loading
+              img(src='images/watson-gray.gif')
+            div.ta-result(style='display:none;')
+              #taWidgetContainer
+
+  div.location-template(style='display:none')
+    .col-lg-3.col-md-3.col-xs-6
+      .employee-card.row
+        .overflow-container
+          .expert-info.col-lg-12.col-md-12.col-xs-12
+            a.expert-result(href='/location', target='_blank')
+              h4.expert-name Location Name
+              h4.expert-score Score
+            hr
+            ul.expertise
+  form.location-form(method='post', action='destination').hidden
+    input.location-id(name='place')

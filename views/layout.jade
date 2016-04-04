@@ -1,0 +1,31 @@
+//- layout.jade
+doctype html
+html(lang='en')
+  head
+    block title
+      title Personalized Recommendations
+
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='shortcut icon', href='/images/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='/images/favicon.ico', type='image/x-icon')
+    link(rel='stylesheet', href='/css/watson-bootstrap-dark.css')
+    link(rel='stylesheet', href='/css/jquery.modal.css')
+    link(rel='stylesheet', href='/css/style.css')
+    link(rel='stylesheet', href='/css/banner.css')
+
+  body
+    div.container
+      div.row
+      block row-content
+
+    script(src='/js/handlebars-v3.0.0.js')
+    script(src='/js/jquery-1.11.1.min.js')
+    script(src='/js/jquery.modal.min.js')
+    script(src='https://twitter.github.io/typeahead.js/releases/0.10.5/typeahead.bundle.js')
+    script(src='https://ta-cdn.mybluemix.net/v1/TradeoffAnalytics.js')
+
+    script(src='/js/concept-insights.js')
+    script(src='/js/tradeoff-analytics.js')
